@@ -1,0 +1,4 @@
+<h1>Qiita.user_items 'fakestarbaby'</h1>
+<% @user_items.each do |user_item| %>
+  <p><%= user_item[:updated_at] %> : <%=link_to user_item[:title], user_item[:url], :target => "_blank" %></p>
+<% end %>
